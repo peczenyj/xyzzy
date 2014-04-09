@@ -29,7 +29,7 @@ get '/calcularTempoMenorCaminho/:de/:para.:format' => sub {
   my $x = eval { $stations->calcularTempoMenorCaminho(params->{de}, params->{para}) };
 
   { 
-    x = $x,
+    x => $x,
     error => $@,
   } 
 };
