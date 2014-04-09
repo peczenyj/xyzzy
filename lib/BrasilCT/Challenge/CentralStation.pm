@@ -5,7 +5,7 @@ use BrasilCT::Challenge::Importer;
 use BrasilCT::Challenge::Station;
 use BrasilCT::Challenge::Line;
 use Graph;
-use Graph::RandomPath;
+use Graph::RandomPath2;
 use Moo;
 
 has graph => ( is => 'lazy' );
@@ -40,7 +40,7 @@ sub _build_lines {
 sub listarUmCaminho {
   my ($self, $de, $para) = @_;
 
-  my @path = eval{ Graph::RandomPath->create_generator($self->graph, $de, $para)->() };
+  my @path = eval{ Graph::RandomPath2->create_generator($self->graph, $de, $para)->() };
 
   {
     caminho => \@path,

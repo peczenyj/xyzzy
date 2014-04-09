@@ -26,7 +26,12 @@ get '/listarMenorCaminho/:de/:para.:format' => sub {
 
 get '/calcularTempoMenorCaminho/:de/:para.:format' => sub {
 
-  $stations->calcularTempoMenorCaminho(params->{de}, params->{para});
+  my $x = eval { $stations->calcularTempoMenorCaminho(params->{de}, params->{para}) };
+
+  { 
+    x = $x,
+    error => $@,
+  } 
 };
 
 1;

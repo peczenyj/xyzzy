@@ -1,4 +1,4 @@
-package Graph::RandomPath;
+package Graph::RandomPath2;
  
 use 5.010000;
 use strict;
