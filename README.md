@@ -6,7 +6,7 @@ formato == json / xml
 GET /listarUmCaminho/de/para.formato
 
 
-  $ curl -s http://pacman-rest.herokuapp.com/listarUmCaminho/49/285.xml
+  $ curl -s http://pacman-rest.herokuapp.com/listarUmCaminho/49/285.json
   
   {
      "caminho" : [
@@ -20,7 +20,7 @@ GET /listarUmCaminho/de/para.formato
 
 GET /listarMenorCaminho/de/para.formato
 
-  $ curl -s http://pacman-rest.herokuapp.com/listarMenorCaminho/49/285.xml
+  $ curl -s http://pacman-rest.herokuapp.com/listarMenorCaminho/49/285.json
   
   {
    "caminho" : [
@@ -33,7 +33,7 @@ GET /listarMenorCaminho/de/para.formato
 
 GET /calcularTempoMenorCaminho/de/para.formato
 
-  $ curl -s http://pacman-rest.herokuapp.com/calcularTempoMenorCaminho/49/285.xml
+  $ curl -s http://pacman-rest.herokuapp.com/calcularTempoMenorCaminho/49/285.json
   
   {
    "de" : "49",
