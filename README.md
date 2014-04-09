@@ -7,23 +7,36 @@ GET /listarUmCaminho/de/para.formato
 
 
   $ curl -s http://pacman-rest.herokuapp.com/listarUmCaminho/49/285.xml
-  <data>
-    <caminho>49</caminho>
-    <caminho>87</caminho>
-    <caminho>279</caminho>
-    <caminho>285</caminho>
-  </data>
+  
+  {
+     "caminho" : [
+        "49",
+        "87",
+        "279",
+        "285"
+     ]
+  }
+
 
 GET /listarMenorCaminho/de/para.formato
 
   $ curl -s http://pacman-rest.herokuapp.com/listarMenorCaminho/49/285.xml
-  <data>
-    <caminho>49</caminho>
-    <caminho>87</caminho>
-    <caminho>285</caminho>
-  </data>
+  
+  {
+   "caminho" : [
+      "49",
+      "87",
+      "285"
+   ]
+  }
+
 
 GET /calcularTempoMenorCaminho/de/para.formato
 
   $ curl -s http://pacman-rest.herokuapp.com/calcularTempoMenorCaminho/49/285.xml
-  <data de="49" para="285" tempo="18" />
+  
+  {
+   "de" : "49",
+   "tempo" : 18,
+   "para" : "285"
+  }
