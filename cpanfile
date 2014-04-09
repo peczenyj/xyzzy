@@ -4,3 +4,4 @@ requires 'Graph', '0.94';
 requires 'Moo', '1.003001';
 requires 'Text::CSV', '1.21';
 requires 'JSON', '2.59';
+requires 'XML::Simple', '2.18';
